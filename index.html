@@ -1,155 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IamTheCode - Code for Change</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beyond the Code: Learning for Change</title>
+    <link rel="icon" href="QHS-logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  </script>
 </head>
 
+
 <body>
-<!-- HEADER -->
+  <!-- HEADER -->
   <header>
-    <div class="title-container">
-      <h1 id="title">IamTheCode - Code for Change</h1>
-      <h2 class="subtitle">Empowering Minds | Building the Future</h2>
-      <h3 class="subtitle">Quirino High School</h3>
-    </div>
+    <!-- ===== FIXED NAVIGATION BAR ===== -->
+    <nav class="main-nav fixed-nav">
 
-    <nav>
-      <button onclick="showSection('home')">Home</button>
-      <button onclick="showSection('sdg')">SDG Project</button>
-      <button onclick="showSection('testimonials')">Testimonials</button>
-      <button onclick="showSection('gallery')">Gallery</button>
+
+      <!-- Menu Icon -->
+      <div class="menu-icon" id="menuIcon">&#9776;</div>
+
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navbarMenu">
+          <li><button onclick="showSection('home')">Home</button></li>
+          <li><button onclick="showSection('journey')">iamtheCODE</button></li>
+          <li><button onclick="showSection('sdg')">SDG Project</button></li>
+          <li><button onclick="showSection('others')">Others</button></li>
+      </ul>
     </nav>
-  </header>
 
-  <div class="divider1"></div>
-  <div class="divider1"></div>
+
+    <!-- Overlay for mobile menu -->
+    <div id="menu-overlay"></div>
+ 
+    <header class="main-header">
+    <div class="header-left">
+      <img src="QHS-logo.png" alt="QHS Logo" class="swipe-left">
+    </div>
+    <div class="header-center">
+      <h1 class="fade-in">Beyond the Code: <span>Learning for Change</span></h1>
+      <p class="subtitle">Bringing Learners Together Through Technology, Creativity, and Collaboration.</p>
+      <p class="subtitle">Empowering Minds | Building the Future</p>
+      <p class="subtitle school">Quirino High School</p> 
+      <li><button onclick="showSection('home')" button class="discover-btn">Discover</button></li>
+    </div>
+    <div class="header-right">
+      <img src="iatc-logo.png" alt="IamTheCode Logo" class="swipe-right">
+    </div>
+</header>
+
+
+  <!-- MAIN CONTENT -->
   <main>
-    <!-- HOME SECTION -->
-    <section id="home" class="active">
-      <h2>About Our Journey</h2>
-      <p>We are students from the IamTheCode program, documenting our learning and linking it with the UN SDGs through coding and creativity.</p>
+      <!-- HOME SECTION -->
+      <section id="home" class="active">
+        <div class="abt-divider">
+          <h2>About</h2>
+          <p><b>Beyond the Code: Learning for Change</b> is a student-developed website created by participants of Quirino High School’s iamtheCODE Program. It serves as a digital portfolio that highlights our progress in digital literacy, including our work in web development, creativity, and collaborative learning throughout the program.</p>
 
-      <div class="divider"></div>
 
-      <h2>Meet Our Team</h2>
+          <home p>The website also presents our project on <b>SDG 13: Climate Action</b>, which focuses on promoting environmental awareness and encouraging sustainable practices within the school community. Through this platform, we aim to document our experiences, share our outputs, and inspire others to take part in meaningful initiatives for a better and more sustainable future.</p>
 
-      <!-- Teacher -->
-     <h3 class="team-category">Teacher Facilitator</h3>
-      <div class="team-row">
-        <div class="team-card" onclick="showBio('Our teacher facilitator, Ms. Maria Theresa B. Baltazar, guided us through our IamTheCode journey and supported every step.')">
-          <img src="images/teacher.jpg" alt="Teacher Facilitator" />
-          <h4>Ms. Maria Theresa B. Baltazar</h4>
-          <p>Teacher Facilitator</p>
+        </div>
+
+        <div class="divider-line2"></div>
+        <p> Click the card to reveal the answer.</p>
+          <div class="team-row">
+            <div class="team-card" onclick="showBio('iamtheCODE is a global initiative that empowers youth, especially girls from underserved communities through coding and STEAMD education. It provides mentorship and digital learning programs to build skills and inspire young changemakers, aiming to train 1 million female coders by 2030.')">
+              <h4>What is iamtheCODE?</h4>
+            </div>
+          </div>
+       
+          <button onclick="window.open('https://www.iamthecode.org/about/', '_blank')">
+            Explore How Coding Connects Us All
+          </button>
+
+
+        <div class="gallery-photos"></div>
+          <h3>Coding Sessions</h3>
+          <div class="gallery-grid1"></div>
+          <img src="pic 1.jpeg" class="gallery-img" alt="sample pic 1">
+          <img src="pic 2.jpeg" class="gallery-img" alt="sample pic 2">
+          <img src="pic 3.jpeg" class="gallery-img" alt="sample pic 3">
+
+
+         <div class="gallery-video">
+          <div class="video-grid1"></div>
+            <video controls>
+              <source src="iatc 1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+
+            <video controls>
+              <source src="iatc 1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+
+
+
+        <div class="divider-line2"></div>
+
+
+        <div class="team-divider">
+
+          <h2>Meet Our Team</h2>
+
+
+          <h3 class="team-category">School Head</h3>
+          <div class="team-row">
+            <div class="team-card" onclick="showBio('Ms. Simon provides strong leadership and guidance to ensure quality education and continuous improvement in our school community. Her support plays an important role in helping students and teachers achieve excellence and uphold the school’s mission.')">
+              <img src="schoolhead.jpg" alt="School Head">
+              <h4>Ms. Carolyn C. Simon</h4>
+            </div>
+          </div>
+
+
+          <h3 class="team-category">Head Teacher</h3>
+          <div class="team-row">
+            <div class="team-card" onclick="showBio('Ms. Tumbado oversees academic programs and ensures that learning standards are consistently met. Her leadership contributes to a well-organized and productive environment for both students and teachers.')">
+              <img src="headteacher.jpg" alt="Head Teacher">
+              <h4>Ms. Evelyn B. Tumbado</h4>
+            </div>
+          </div>
+
+
+          <h3 class="team-category">ICT Coordinator</h3>
+          <div class="team-row">
+            <div class="team-card" onclick="showBio('Mr. Acal handles the technical setup and digital tools required for program implementation. Ensures seamless access to technology and assists with digital resources.')">
+              <img src="ICTcoor.jpg" alt="ICT Coordinator">
+              <h4>Mr. Reynold Lorens Acal</h4>
+            </div>
+          </div>
+
+
+          <!-- TEACHER FACILITATOR -->
+          <h3 class="team-category">Teacher Facilitator</h3>
+          <div class="team-row">
+            <div class="team-card" onclick="showBio('Ms. Baltazar facilitates engaging and meaningful learning sessions while providing continuous support to participants. Ensures that all lessons inspire growth and remain aligned with the program’s mission and values.')">
+              <img src="teacher.jpg" alt="Teacher Facilitator">
+              <h4>Ms. Maria Theresa B. Baltazar</h4>
+            </div>
+          </div>
+
+
+          <!-- TEAM LEADERS -->
+          <h3 class="team-category">Team Leader</h3>
+          <div class="team-row">
+            <div class="team-card" onclick="showBio('Nathalie provides overall direction and ensures smooth coordination of all activities. Leads the team in planning, decision-making, and achieving project goals.')">
+              <img src="Nathalie1.jpg" alt="Leader 1">
+              <h4>Nathalie R. Arcillas</h4>
+            </div>
+          </div>
+
+
+          <!-- MEMBERS -->
+          <h3 class="team-category">Members</h3>
+          <div class="team-row">
+            <div class="team-card" onclick="showBio('Jonairah ensures effective collaboration among team members. Observes and promotes teamwork, helping maintain smooth coordination throughout the project.')">
+              <img src="Jonairah.jpg" alt="Member 2">
+              <h4>Jonairah D. Comacasar</h4>
+             </div>
+
+            <div class="team-card" onclick="showBio('Alex provides technical support to the team, particularly in coding tasks. Contributes ideas and assists in preparing program presentations.')">
+              <img src="Alex.jpg" alt="Member 1">
+              <h4>Alexzandra T. Collante</h4>
+            </div>
+
+            <div class="team-card" onclick="showBio('Jarhed supports the group in coding development and presentation planning. Helps enhance the technical quality and clarity of the team’s outputs.')">
+              <img src="Jarhed.jpg" alt="Member 3">
+              <h4>Jarhed Lei C. Notario</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- SDG PROJECT SECTION -->
+      <section id="sdg">
+        <div class="sdg-divider"></div>
+          <div class="sdg-divider">
+            <div class="divider1">
+              <h2>Our SDG Project</h2>
+
+              <div class="gallery-grid2"></div>
+
+              <div class="flip-grid">
+
+              <!-- MODULE CARD -->
+              <div class="flip-card">
+                <div class="flip-inner">
+
+                  <!-- FRONT -->
+                  <div class="flip-front">
+                    <img src="solar-panel1.jpg" alt="Module 1">
+                    <h3>Solar Panels</h3>
+                  </div>
+
+                  <!-- BACK -->
+                  <div class="flip-back">
+                    <h4>Solar Panels</h4>
+                    <p>
+                     ........
+                    </p>
+
+                    <div class="back-images">
+                      <img src="solar-panel2.jpg">
+                      <img src="solar-panel3.jpg">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+               <!-- MODULE CARD -->
+              <div class="flip-card">
+                <div class="flip-inner">
+
+                  <!-- FRONT -->
+                  <div class="flip-front">
+                    <img src="releaf.jpg" alt="Module 1">
+                    <h3>Project ReLeaf</h3>
+                  </div>
+
+                  <!-- BACK -->
+                  <div class="flip-back">
+                    <h4>Project ReLeaf</h4>
+                    <p>
+                      .....
+                    </p>
+
+                    <div class="back-images">
+                      <img src="PR1.jpg">
+                      <img src="PR2.jpg">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+               <!-- MODULE CARD -->
+              <div class="flip-card">
+                <div class="flip-inner">
+
+                  <!-- FRONT -->
+                  <div class="flip-front">
+                    <img src="releaf.jpg" alt="Module 1">
+                    <h3>Waste Segregation</h3>
+                  </div>
+
+                  <!-- BACK -->
+                  <div class="flip-back">
+                    <h4>Waste Segregation</h4>
+                    <p>
+                      .....
+                    </p>
+
+                    <div class="back-images">
+                      <img src="mod1-1.jpg">
+                      <img src="mod1-2.jpg">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+            </div>
+            </div>
+
+            <div class="divider-line3"></div>
+
+              <div class="gallery-sdg"></div>
+              <h3>ACTIVITIES</h3>
+
+              <h4>Tree Planting</h4>  
+              <div class="gallery-grid2"></div>
+              <img src="act-sdg1.jpg" class="gallery-img" alt="ACT 1-SDG 13 Image" onclick="window.open('https://www.facebook.com/YESQHS/posts/pfbid0CmFxbSFeQacSguMcUMYgNhNXRc1fcBrhUGLdZGZs6ni7xs15bsD2cXkGDBJHTyq8l', '_blank')">
+              <img src="act-sdg2.jpg" class="gallery-img" alt="ACT 2-SDG 13 Image" onclick="window.open('https://www.facebook.com/YESQHS/posts/pfbid0CmFxbSFeQacSguMcUMYgNhNXRc1fcBrhUGLdZGZs6ni7xs15bsD2cXkGDBJHTyq8l', '_blank')">
+              <img src="act-sdg3.jpg" class="gallery-img" alt="ACT 3-SDG 13 Image" onclick="window.open('https://www.facebook.com/YESQHS/posts/pfbid0CmFxbSFeQacSguMcUMYgNhNXRc1fcBrhUGLdZGZs6ni7xs15bsD2cXkGDBJHTyq8l', '_blank')">
+              <p>Click photo for more information.</p>
+
+              <h4>Urban Gardening</h4>
+              <div class="gallery-grid2"></div>
+              <img src="act-sdg4.jpg" class="gallery-img" alt="ACT 4-SDG 13 Image" onclick="window.open('https://www.facebook.com/permalink.php?story_fbid=pfbid034JFLZoAbbKJPLpioCwdrsCraEdQeMnPmxXmcq1QSbZFARgK63PQV8k3FmXFghSSWl&id=61550308990305', '_blank')">
+              <p>Click photo for more information.</p>
+
+              <div class="gallery-sdg"></div>
+              <h3>SEMINARS</h3>
+
+              <div class="gallery-grid2"></div>
+              <img src="sem-sdg1.jpg" class="gallery-img" alt="SEM 1-SDG 13 Image" onclick="window.open('https://www.facebook.com/share/p/17pPxgKgiu/', '_blank')">
+
+              <div class="gallery-sdg"></div>
+              <h3>CONTESTS</h3>
+
+              <div class="gallery-grid2"></div>
+              <img src="con-sdg1.jpg" class="gallery-img" alt="CON 1-SDG 13 Image" onclick="window.open('https://www.facebook.com/share/p/1FQocdsZ8p/', '_blank')">
+              <img src="con-sdg2.jpg" class="gallery-img" alt="CON 2-SDG 13 Image" onclick="window.open('https://www.facebook.com/share/p/1Bhwj9K5s6/', '_blank')">
+
+            <div class="divider-line3"></div>
+          <div class="divider2">
+            <h2>🌿 Interactive Activity 🌎</h2>
+            <p>Click “Run” to receive an inspiring message or answer a true or false quiz about the environment and climate action.</p>
+            <iframe src="https://trinket.io/embed/python/208340ef6bdf?outputOnly=true&runOption=run"
+              width="63%" height="600" frameborder="0" marginwidth="0" marginheight="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- iamtheCODE -->
+      <section id="journey">
+        <div class="divider">
+          <h2>Our Journey</h2>
+          <p>
+            Quirino High School participated in the iamtheCODE pilot program, a global initiative dedicated to empowering young women through coding, digital literacy, and STEAMD education. As one of the pilot schools,
+            Quirino High School provided its students with the opportunity to gain hands-on experience in coding, technology, and collaborative problem-solving over a 12-week program.
+          </p>
+
+          <div class="divider-line2"></div>
+
+          <div class="gallery-photos">
+            <h3>Timeline</h3>
+            <div class="gallery-grid1">
+             <img src="ganntchart.jpg" class="gallery-img1" alt="timeline">
+           </div>
+
+          <div class="divider-line2"></div>
+
+          <div class="gallery-photos"></div>
+           <h3>Sample Outputs</h3>
+            <div class="gallery-grid">
+             <img src="output 1.jpeg" class="gallery-img" alt="output 1">
+             <img src="output 2.jpeg" class="gallery-img" alt="output 2">
+             <img src="output 3.jpg" class="gallery-img" alt="output 3">
+           </div>
+
+           <div class="gallery-video">
+            <video controls>
+              <source src="output vid 1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+            <video controls>
+              <source src="output vid 1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="divider-line2"></div>
+
+          <div class="gallery-video">
+            <h3>Featured Story</h3>
+
+            <div class="team-row">
+              <div class="team-card" onclick="showBio('iamtheCODE is a global initiative that empowers youth, especially girls from underserved communities through coding and STEAMD education. It provides mentorship and digital learning programs to build skills and inspire young changemakers, aiming to train 1 million female coders by 2030.')">
+                <h4>What is iamtheCODE?</h4>
+              </div>
+            </div>
+
+            <video controls>
+              <source src="ft story.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </div>
 
-      <!-- Team Leaders -->
-      <h3 class="team-category">Team Leaders</h3>
-      <div class="team-row">
-        <div class="team-card" onclick="showBio('Nathalie leads our coding and SDG research section.')">
-          <img src="images/leader1.jpg" alt="Team Leader 1" />
-          <h4>Nathalie R. Arcillas</h4>
-          <p>Team Leader</p>
+        <div class="divider-line4"></div>
+
+        <div class="lrn-divider">
+          <h2 class="section-title">Learnings</h2>
+
+            <!-- FLIP CARDS GO HERE -->
+            <div class="flip-grid">
+
+              <!-- MODULE CARD -->
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 1: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 2: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 3: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 4: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 5: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 6: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+                  <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 1: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 2: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 3: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 4: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 5: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-inner">
+                  <div class="flip-front">
+                    <img src="images/module1.jpg" alt="Module 1">
+                    <h3>Module 6: Introduction</h3>
+                  </div>
+                  <div class="flip-back">
+                    <p1>
+                      This module helped me understand the goals of the IAmTheCode program
+                      and how technology can empower young people.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
 
-        <div class="team-card" onclick="showBio('Jonairah manages our project design and documentation tasks.')">
-          <img src="images/leader2.jpg" alt="Team Leader 2" />
-          <h4>Jonairah D. Comacasar</h4>
-          <p>Team Leader</p>
-        </div>
-      </div>
+          <div class="divider-line5"></div>
 
-      <!-- Members -->
-      <h3 class="team-category">Members</h3>
-      <div class="team-row">
-        <div class="team-card" onclick="showBio('[name] contributes to research and presentation design.')">
-          <img src="images/member1.jpg" alt="Member 1" />
-          <h4>[name]</h4>
-          <p>Member</p>
-        </div>
+          <h2>Student Testimonials</h2>
+          <p>Here are some inspiring reflections from our learners.</p>
 
-        <div class="team-card" onclick="showBio('[name] helps with website layout and content writing.')">
-          <img src="images/member2.jpg" alt="Member 2" />
-          <h4>[name]</h4>
-          <p>Member</p>
+          <div class="testimonial-list">
+          <div class="testimonial-listings">"IamTheCode taught me how powerful coding can be to change the world!" – [name]</div>
+          <div class="testimonial-listings">"Through this journey, I learned teamwork, patience, and purpose." – [name]</div></div>
+
+          <div class="testimonial-form">
+            <h3>Share Your Thoughts</h3>
+            <textarea id="userTestimonial" placeholder="Write your testimonial..."></textarea>
+            <button onclick="addTestimonial()">Submit</button>
+          </div>
         </div>
 
-        <div class="team-card" onclick="showBio('[name] supports coding and testing features for the site.')">
-          <img src="images/member3.jpg" alt="Member 3" />
-          <h4>[name]</h4>
-          <p>Member</p>
+        <div class="divider-line5"></div>
+
+            <h3>Our Photos</h3>
+            <div class="gallery-carousel">
+              <div class="gallery-track">
+              <button class="gallery-btn prev">&#10094;</button>
+                <img src="IATC 1.jgp" class="gallery-slide active">
+                <img src="IATC 2.jpg" class="gallery-slide">
+                <img src="IATC 3.jpg" class="gallery-slide">
+                <img src="IATC 4.jpg" class="gallery-slide">
+                <img src="IATC 5.jpg" class="gallery-slide">
+                <img src="IATC 6.jpg" class="gallery-slide">
+                <img src="IATC 7.jpg" class="gallery-slide">
+                <img src="IATC 8.jpg" class="gallery-slide">
+                <img src="IATC 9.jpg" class="gallery-slide">
+              <button class="gallery-btn next">&#10095;</button>
+              </div>
+            </div>
+
+              <div class="divider-line2"></div>
+
+              <div class="gallery-video">
+              <h3>Our Journey Video</h3>
+              <video controls>
+                <source src="iamthecode.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+      </section>
+
+
+         <!-- OTHERS -->
+        <section id="others">
+        <div class="faqs-divider">
+            <h2>FAQs</h2>
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question">What is iamtheCODE?</div>
+                <div class="faq-answer">
+                  iamtheCODE is a global movement that empowers youth—especially girls—to learn coding, digital literacy, and STEM skills to achieve the UN Sustainable Development Goals.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">How did Quirino High School implement the program?</div>
+                <div class="faq-answer">
+                  Through 12 weeks of hands-on coding workshops, mentorship, and collaborative activities that developed both technical and soft skills among students.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">What skills did students gain?</div>
+                <div class="faq-answer">
+                  Students learned HTML, CSS, and JavaScript, as well as teamwork, leadership, and communication skills vital to success in technology and beyond.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">How does the program promote education and equality?</div>
+                <div class="faq-answer">
+                  By ensuring equal access to digital learning opportunities for both male and female students, fostering inclusion and empowerment through technology.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">How can other schools join or replicate the initiative?</div>
+                <div class="faq-answer">
+                  Schools can reach out to the iamtheCODE foundation or collaborate with educational organizations that promote coding and digital inclusion.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">How did coding help students beyond technology?</div>
+                <div class="faq-answer">
+                  Coding improved students' patience, focus, logical thinking, teamwork, and confidence. It taught them how to solve problems, express creativity, and work collaboratively, skills that are useful in school, careers, and daily life.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">How can I start my coding journey?</div>
+                <div class="faq-answer">
+                  You can start by exploring free online resources like W3Schools, Khan Academy, and Code.org. Even practicing simple HTML or Python can begin your journey. Joining school ICT clubs or participating in programs like iamtheCODE also helps.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">What is the relevance of this program?</div>
+                <div class="faq-answer">
+                  The program is relevant because it prepares students for a world driven by technology. It strengthens digital literacy, promotes equality, and encourages students to become future innovators who contribute positively to society.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">How does our project support the Sustainable Development Goals?</div>
+                <div class="faq-answer">
+                  Our project supports SDG #13: Climate Action by raising awareness about environmental issues and encouraging sustainable practices.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">What did we learn from this experience?</div>
+                <div class="faq-answer">
+                  We learned how to code, collaborate, communicate, and think creatively. We also gained a deeper understanding of real-world issues and the importance of contributing to the SDGs. Most importantly, we learned that technology can be a powerful tool for change.
+                </div>
+              </div>
+            </div>
         </div>
-      </div>
 
-      <div class="divider"></div>
+        <div class="divider-line4"></div>
 
-        <h2><i class="fas fa-project-diagram"></i>Overview</h2>
-        <p>
-          [Overview of our website or something about IamTheCode]
-        </p>
-
-        <div class="divider"></div>
-
-        <h2><i class="fas fa-tools"></i> Contact Us</h2>
-        <p>
-          For feedbacks and recommendations, reach out to us at quirinohighschool@gmail.com
-        </p>
-    </section>
-
-    <!-- SDG SECTION -->
-    <section id="sdg">
-      <h2>Our SDG Project</h2>
-      <p>Our project focuses on <b>SDG #4: Quality Education</b>. We aim to promote equal learning opportunities through coding literacy, empowering students to use technology for a better future.</p>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials">
-      <h2>Student Testimonials</h2>
-      <p>Here are some inspiring reflections from our learners.</p>
-
-      <div id="testimonial-list">
-        <div class="testimonial">"IamTheCode taught me how powerful coding can be to change the world!" – [name]</div>
-        <div class="testimonial">"Through this journey, I learned teamwork, patience, and purpose." – [name]</div>
-      </div>
-
-      <div class="testimonial-form">
-        <h3>Share Your Thoughts</h3>
-        <textarea id="userTestimonial" placeholder="Write your testimonial..."></textarea>
-        <button onclick="addTestimonial()">Submit</button>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery">
-      <h2>Project Gallery</h2>
-      <p>Explore our documentation through images and videos.</p>
-      <div class="gallery-grid">
-        <img src="images/work1.jpg" alt="Project 1">
-        <img src="images/work2.jpg" alt="Project 2">
-        <img src="images/work3.jpg" alt="Project 3">
-      </div>
-    </section>
+        <div class="contact-divider">
+          <h2>Contact</h2>
+          <p>Quirino High School</p>
+          <p>Email: <a href="mailt:quirinohighschool@gmail.com">quirinohighschool@gmail.com</a></p>
+          <div class="divider-line2"></div>
+          <h2>Acknowledgment</h2>
+             <div class="gallery-carousel">
+                <div class="gallery-track">
+                  <img src="deped.png" class="gallery-slide active">
+                  <img src="sdo.png" class="gallery-slide">
+                  <img src="iatc-logo.png" class="gallery-slide">
+                  <img src="hlp.png" class="gallery-slide">
+                  <img src="srq 5.png" class="gallery-slide">
+                  <img src="QHS-logo 6.png" class="gallery-slide">
+              </div>
+            <p>We extend our sincere appreciation to the <b>Department of Education</b>, <b>Her Legacy Project Foundation (HLPF)</b>, <b>Software Research (QSR)</b>, and the <b>Education Program Specialists (EPS)</b> for their continued support, guidance, and collaboration in making this initiative a success.</p>
+            <p>We also thank the <b>iamtheCODE Program</b> and <b>Quirino High School</b> for their strong partnership and commitment to empowering learners through technology and innovation. Our heartfelt gratitude is extended to our School Head, <b>Ms. Carolyn C. Simon</b>, and our Head Teacher, <b>Ms. Evelyn B. Tumbado</b>, for their leadership and encouragement throughout this project.</p>
+            <p>We also extend our gratitude to the <b>QHS YES-O Club</b> for their support and active involvement. Their contributions strengthened our Sustainable Development Goal (SDG) initiatives and our advocacy for environmental awareness and sustainability.</p>
+            <p>Lastly, we express our appreciation to our Teacher Facilitator, <b>Ms. Maria Theresa B. Baltazar</b>, to our ICT Coordinator, <b>Mr. Reynold Lorens Acal</b>, and to our fellow <b>iamtheCODE students</b>, whose dedication, teamwork, and enthusiasm greatly contributed to the success of this program.</p>
+        </div>
+      </section>
   </main>
 
-  <!-- BIO POPUP -->
-  <div id="bio-popup" class="hidden">
-    <div class="bio-content">
-      <p id="bio-text"></p>
-      <button onclick="closeBio()">Close</button>
-    </div>
-  </div>
 
-  <footer>
-      <p>"We code for change" - QHS IamTheCode Team</p>
-      <p>"Sa Aristotle, Lahat Panalo"</p>
-      <p>School Year 2025-2026</p>
-      <p>© 2025 Quirino High School IamTheCode Team</p>
-  </footer>
+    <footer>
+        <p>"We code for change" - QHS IamTheCode Team</p>
+        <p>School Year 2025-2026</p>
+        <p>© 2025 Quirino High School IamTheCode Team</p>
+    </footer>
+
 
   <script src="script.js"></script>
+
+
 </body>
 </html>
