@@ -105,8 +105,8 @@ sdg-divider{
   padding: 40px 20px;
 }
 
-.faqs-divider{
-  background-image: url('faqs.jpg'); /* <-- replace with your photo path */
+.faqs1-divider{
+  background-image: url('faqs1.jpg'); /* <-- replace with your photo path */
   background-size: cover;       /* Make sure the photo covers the whole header */
   background-position: center;  /* Center the photo */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -1389,7 +1389,7 @@ body {
 
 /* FRONT SIDE: gradient + image */
 .flip-front1 {
-  background: linear-gradient(135deg, #b56576, #ffffff); /* light maroon → white */
+  background: linear-gradient(180deg, #b56576, #ffffff); /* light maroon → white */
   color: #4a2c2a; /* darker text for readability */
 }
 
