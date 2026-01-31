@@ -49,7 +49,7 @@ section.active {
   padding: 40px 20px;
 }
 
-.greenflag{
+.divider3{
   background-image: url('greenflag.jpg'); /* <-- replace with your photo path */
   background-size: cover;       /* Make sure the photo covers the whole header */
   background-position: center;  /* Center the photo */
