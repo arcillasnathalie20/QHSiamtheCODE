@@ -64,7 +64,7 @@ section.active {
 }
 
 .abt-divider{
-  background-image: url('about-bg2.jpg'); /* <-- replace with your photo path */
+  background-image: url('about-bg1.jpg'); /* <-- replace with your photo path */
   background-size: cover;       /* Make sure the photo covers the whole header */
   background-position: center;  /* Center the photo */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -229,7 +229,7 @@ background: linear-gradient(180deg, #fff8f8 0%, #f7eaea 100%);
   padding: 215px 0;
   
   /* Background image instead of solid color */
-  background-image: url('header-bg.jpg'); /* <-- replace with your photo path */
+  background-image: url('about-bg2.jpg'); /* <-- replace with your photo path */
   background-size: cover;       /* Make sure the photo covers the whole header */
   background-position: center;  /* Center the photo */
   background-repeat: no-repeat; /* Prevent tiling */
